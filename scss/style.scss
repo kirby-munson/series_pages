@@ -1,0 +1,296 @@
+
+$yellow: #FBAF19;
+$orange: #F2721E;
+$red: #ED1F23;
+$gray: #f2f2f2;
+$dgray: #d9d9d9;
+
+$title: #181818;
+$body: #797979;
+
+
+
+/* HEADER CONTENT */
+
+.container {
+  width: 100%;
+}
+
+.header {
+  position: relative;
+
+img {
+  width: 100%;
+}
+}
+
+/* NAV CONTENT */
+
+.navigation {
+    width: 100%;
+    text-align: center;
+
+  li {
+    float: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  a {
+  color: $title;
+  text-decoration: none;
+}
+
+  a:hover {
+  color: $body;
+}
+
+ul li.scrollTop {
+float: right;}
+}
+
+
+/* mobile nav */
+
+
+@media (min-width: 0px) and (max-width: 749px) {
+
+    .mainnav {
+      display: none;
+    }
+
+  .navbar {
+  margin: 0px;
+}
+
+  .navbar-inverse {
+
+    p{
+  padding: 12px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  }
+}
+
+
+ }
+
+@media (min-width: 750px) and (max-width: 830px) {
+
+    .navbar-inverse {
+      display: none;
+    }
+
+    .navigation li {
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+ }
+
+@media (min-width: 750px) and (max-width: 1700px) {
+
+    .navbar-inverse {
+      display: none;
+    }
+
+ }
+
+
+/* Description section */
+
+.desc {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  padding: 50px;
+  color: white;
+}
+
+.description {
+  background-color: $dgray;
+}
+
+u {
+  text-decoration-color: $red;
+}
+
+/* mobile description */
+
+
+@media (min-width: 0px) and (max-width: 749px) {
+
+  .desc {
+    font-size: 14px;
+  }
+
+ }
+
+@media (min-width: 750px) and (max-width: 880px) {
+
+    .desc {
+      font-size: 14px;
+    }
+ }
+
+/* teaching section */
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  color: $title;
+  padding-top: 25px;
+  padding-bottom: 45px;
+  text-align: center
+}
+
+.teaching {
+  background-color: white;
+  padding-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+
+  ul {
+list-style-type: none;
+}
+
+}
+
+.bibref {
+  color: $body;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.row2 {
+  margin-top: -29px;
+  margin-bottom: 29px;
+}
+
+.watch {
+  color: $orange;
+  font-weight: 700;
+}
+
+/* mobile teaching */
+
+@media (min-width: 0px) and (max-width: 749px) {
+
+  .teaching {
+    font-size: 14px;
+  }
+
+ }
+
+
+/* ART SECTION: JOY */
+
+.title-joy {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  color: white;
+  background-color: $yellow;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.joy {
+  background-color: $gray;
+  padding-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  height: 500px;
+
+  img {
+  width: 100%;
+}
+}
+
+.art {
+  background-color: $gray;
+  height: 400px;
+}
+
+#myCarousel {
+  font-family: 'Poppins', sans-serif;
+  text-shadow: none;
+}
+
+
+/* discussion questions */
+
+.questions {
+  background-color: white;
+  padding-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+
+p {
+  margin-bottom: 30px;
+}
+}
+
+
+/* songs section */
+
+
+.songs {
+  background-color: white;
+  padding-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+
+p {
+  margin-bottom: 30px;
+}
+}
+
+/* footer */
+
+footer {
+background-color: $red;
+
+img {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+}
+}
+
+/* resources */
+
+
+.grid.button {
+margin: 0 auto;
+}
+
+.grid{
+padding: 50px;
+text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 50px;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
+
+ img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+}
