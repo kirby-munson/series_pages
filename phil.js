@@ -10,4 +10,14 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     }, 1100);
 });
 
+
+function myFunction() {
+    window.print();
+}
+
+//$('.print').on('click', function(){
+//  console.log('it worked!');
+//})//
+
+
 }());

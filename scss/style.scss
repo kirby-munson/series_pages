@@ -111,7 +111,7 @@ float: right;}
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
   padding: 50px;
-  color: white;
+  color: $title;
 }
 
 .description {
@@ -231,6 +231,7 @@ img.carousel-image {
 .carousel-caption {
     text-shadow: none;
     color: white;
+    padding-right: 400px;
     text-align: center;
     position: relative;
     padding-top: 620px;
@@ -288,6 +289,28 @@ li {
 
 }
 
+@media (min-width: 340px) and (max-width: 610px) {
+
+.carousel-caption {
+  padding-top: 300px;
+  font-size: 8px;
+  width: 100%;
+  padding-right: 120px;
+}
+
+}
+
+@media (min-width: 610px) and (max-width: 758px) {
+
+.carousel-caption {
+   padding-top: 400px;
+  font-size: 8px;
+  width: 100%;
+  padding-right: 220px;
+}
+
+}
+
 /* discussion questions */
 
 .questions {
@@ -298,6 +321,36 @@ li {
 
 p {
   margin-bottom: 30px;
+}
+}
+
+.modal-content {
+  border: none;
+  border-radius: 0;
+
+}
+
+.modal-header {
+  text-align: center;
+  color: $red;
+}
+
+
+.modal-title {
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+button.btn.btn-primary {
+  background-color: $red;
+  border-radius: 0;
+  border: none;
+  color: white;
+}
+
+@media only screen and (max-width: 650px){
+  .questions {
+  font-size: 14px;
 }
 }
 
@@ -314,6 +367,34 @@ p {
 p {
   margin-bottom: 30px;
 }
+
+ul {
+padding-top: 45px;
+}
+}
+
+iframe{
+  clear: both;
+}
+
+div.iframe {
+  margin: auto;
+    width: 300px;
+}
+
+
+
+div.main {
+  display: inline;
+  margin: 0 auto;
+}
+
+/* map */
+
+.title.map {
+  background-color: $orange;
+  color: white;
+  margin-bottom: -5px;
 }
 
 /* footer */
@@ -327,6 +408,7 @@ img {
   margin: 0 auto;
 }
 }
+
 
 /* resources */
 
