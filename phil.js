@@ -11,13 +11,4 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 });
 
 
-function myFunction() {
-    window.print();
-}
-
-//$('.print').on('click', function(){
-//  console.log('it worked!');
-//})//
-
-
 }());
