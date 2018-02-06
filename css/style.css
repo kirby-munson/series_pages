@@ -358,25 +358,27 @@ div.main {
   margin-bottom: 5px;
   background-color: #F2721E; }
 
-/* FOOTER */
-footer {
-  background-color: #ED1F23;
-  background: linear-gradient(to right, #ed1f23, rgba(237, 31, 35, 0.75)); }
-  footer img {
-    width: 20%;
-    display: block;
-    margin: 0 auto; }
-
-/* MOBILE FOOTER */
-@media (max-width: 750px) {
-  footer img {
-    width: 50%; } }
-@media (min-width: 751px) and (max-width: 951px) {
-  footer img {
-    width: 30%; } }
 /* RESOURCES */
 .grid.button {
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: #F2721E;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 1px;
+  border-color: #F2721E; }
+
+button.btn {
+  background: #F2721E;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 1px;
+  color: white;
+  border-color: #F2721E; }
+
+button.btn:hover {
+  background: #ED1F23;
+  color: white;
+  border-color: #ED1F23; }
 
 .grid {
   padding: 50px;
@@ -396,5 +398,58 @@ footer {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%; }
+
+/* DIGITAL DOWNLOADS */
+.digital {
+  background-color: #f2f2f2;
+  padding-bottom: 100px; }
+
+.downloads {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .downloads li {
+    float: none;
+    display: inline-block;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif; }
+  .downloads button {
+    background: #F2721E;
+    margin-top: 20px;
+    border-radius: 1px;
+    border-color: #F2721E; }
+  .downloads button:hover {
+    background: #ED1F23;
+    border-color: #ED1F23; }
+  .downloads img {
+    width: 100%; }
+
+.wrapper1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 400px;
+  width: 250px; }
+
+/* FOOTER */
+footer {
+  background-color: #ED1F23;
+  background: linear-gradient(to right, #ed1f23, rgba(237, 31, 35, 0.75)); }
+  footer img {
+    width: 20%;
+    display: block;
+    margin: 0 auto; }
+
+/* MOBILE FOOTER */
+@media (max-width: 750px) {
+  footer img {
+    width: 50%; } }
+@media (min-width: 751px) and (max-width: 951px) {
+  footer img {
+    width: 30%; } }
 
 /*# sourceMappingURL=style.css.map */
