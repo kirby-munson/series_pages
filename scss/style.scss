@@ -19,9 +19,9 @@ $body: #797979;
 .header {
   position: relative;
 
-img {
-  width: 100%;
-}
+  img {
+    width: 100%;
+  }
 }
 
 /* NAV CONTENT */
@@ -43,20 +43,21 @@ img {
   }
 
   a {
-  color: $title;
-  text-decoration: none;
-}
+    color: $title;
+    text-decoration: none;
+  }
 
   a:hover {
-  color: $body;
+    color: $body;
+  }
+
+  ul li.scrollTop {
+    float: right;
+  }
 }
 
-ul li.scrollTop {
-float: right;}
-}
 
-
-/* mobile nav */
+/* MOBIE NAV */
 
 
 @media (min-width: 0px) and (max-width: 749px) {
@@ -65,22 +66,19 @@ float: right;}
       display: none;
     }
 
-  .navbar {
-  margin: 0px;
-}
+    .navbar {
+      margin: 0px;
+    }
 
-  .navbar-inverse {
-
-    p{
-  padding: 12px;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+    .navbar-inverse {
+      p {
+        padding: 12px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+      }
+    }
   }
-}
-
-
- }
 
 @media (min-width: 750px) and (max-width: 830px) {
 
@@ -92,57 +90,59 @@ float: right;}
       font-size: 14px;
       font-family: 'Poppins', sans-serif;
     }
-
  }
 
-@media (min-width: 750px) and (max-width: 1700px) {
+@media (min-width: 750px) and (max-width: 4700px) {
 
     .navbar-inverse {
       display: none;
     }
-
  }
 
 
-/* Description section */
+/* DESCRIPTION SECTION */
 
 .desc {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
   padding: 50px;
+  margin: 0 auto;
   padding-top: 70px;
+  width: 70%;
   padding-bottom: 70px;
   color: $title;
+
+  span {
+    text-decoration: underline;
+    text-decoration-color: $red;
+  }
 }
 
 .description {
   background-color: $dgray;
 }
 
-u {
-  text-decoration-color: $red;
-}
-
-/* mobile description */
+/* MOBILE DESCRIPTION */
 
 
 @media (min-width: 0px) and (max-width: 749px) {
 
   .desc {
     font-size: 14px;
+    width: 100%;
   }
-
  }
 
 @media (min-width: 750px) and (max-width: 880px) {
 
     .desc {
       font-size: 14px;
+      width: 100%;
     }
  }
 
-/* teaching section */
+/* TEACHING SECTION */
 
 .title {
   font-family: 'Poppins', sans-serif;
@@ -160,9 +160,8 @@ u {
   font-size: 18px;
 
   ul {
-list-style-type: none;
-}
-
+    list-style-type: none;
+  }
 }
 
 .bibref {
@@ -182,13 +181,31 @@ list-style-type: none;
 }
 
 button.reading {
-  margin-top: 30px;
+  margin-top: 50px;
   font-size: 25px;
+  background-color: $yellow;
+  border-radius: 1px;
+}
+
+button.reading:hover{
+  background-color: $red;
+}
+
+button.btn.watch.reading a {
+  color: white;
+  text-decoration: none
+}
+
+a.reading {
+  font-size: 55px;
   display: flex;
+  text-align: center;
+  color: $yellow;
+  margin: 0 auto;
   justify-content: center;
 }
 
-/* mobile teaching */
+/* MOBILE TEACHING */
 
 @media (min-width: 0px) and (max-width: 749px) {
 
@@ -359,35 +376,35 @@ h4, h5 {
 
 @media (min-width: 960px) and (max-width: 1100px) {
 
-.carousel-caption {
-   padding-top: 40px;
-  font-size: 12px;
-}
+  .carousel-caption {
+     padding-top: 40px;
+    font-size: 12px;
+  }
 
-.glyphicon.glyphicon-chevron-left,
-.glyphicon.glyphicon-chevron-right {
-  margin-top: 130px;
-}
+  .glyphicon.glyphicon-chevron-left,
+  .glyphicon.glyphicon-chevron-right {
+    margin-top: 130px;
+  }
 
 }
 
 @media (min-width: 1101px) and (max-width: 1300px) {
 
-  .glyphicon.glyphicon-chevron-left,
-  .glyphicon.glyphicon-chevron-right {
-    margin-top: 150px;
+    .glyphicon.glyphicon-chevron-left,
+    .glyphicon.glyphicon-chevron-right {
+      margin-top: 150px;
+    }
+
+  .carousel-caption {
+     padding-top: 70px;
+    font-size: 12px;
   }
 
-.carousel-caption {
-   padding-top: 70px;
-  font-size: 12px;
-}
-
 }
 
 
 
-/* discussion questions */
+/* STUDY QUESTIONS */
 
 .questions {
   background-color: white;
@@ -395,9 +412,15 @@ h4, h5 {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
 
-p {
-  margin-bottom: 30px;
-}
+  p {
+    margin-bottom: 30px;
+  }
+
+  ul {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
 }
 
 .modal-content {
@@ -424,14 +447,17 @@ button.btn.btn-primary {
   color: white;
 }
 
+
+/* MOBILE STUDY QUESTIONS */
+
 @media only screen and (max-width: 650px){
-  .questions {
-  font-size: 14px;
-}
+    .questions {
+    font-size: 14px;
+  }
 }
 
 
-/* songs section */
+/* SONGS */
 
 
 .songs {
@@ -440,13 +466,14 @@ button.btn.btn-primary {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
 
-p {
-  margin-bottom: 30px;
-}
+  p {
+    margin-bottom: 30px;
+  }
 
-ul {
-padding-top: 45px;
-}
+  ul {
+    padding-top: 45px;
+    list-style-type: none;
+  }
 }
 
 iframe{
@@ -459,7 +486,6 @@ div.iframe {
 }
 
 
-
 div.main {
   display: inline;
   margin: 0 auto;
@@ -470,7 +496,20 @@ div.main {
   font-size: 12px;
 }
 
-/* map */
+#songsmodal {
+  .modal-body{
+    p {
+      list-style-type: armenian;
+    }
+    a {
+      background-color: $dgray;
+      margin-bottom: 15px;
+      border-radius: 1px;
+    }
+  }
+}
+
+/* MAP */
 
 .title.map {
   background: $orange;
@@ -480,11 +519,11 @@ div.main {
   margin-bottom: -5px;
 }
 
-/* memorizing scripture */
+/* MEMORIZING SCRIPTURE */
 
 
 .card-body {
-  width: 330px;
+  width: 100%;
   padding: 15px;
   font-family: 'Poppins', sans-serif;
 }
@@ -496,34 +535,53 @@ div.main {
 
 #memory {
 
-ul {
-  list-style-type: none;
+  ul {
+    list-style-type: none;
+  }
+
+  button {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: $orange;
+  }
+
 }
 
-button {
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-}
-
-
-/* footer */
+/* FOOTER */
 
 footer {
 background-color: $red;
 background: linear-gradient(to right, rgba(237,31,35,1), rgba(237,31,35,.75));
 
-img {
-  width: 20%;
-  display: block;
-  margin: 0 auto;
-}
+  img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
+/* MOBILE FOOTER */
 
-/* resources */
+@media (max-width: 750px) {
+
+  footer {
+    img {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 751px) and (max-width: 951px) {
+
+  footer {
+    img {
+      width: 30%;
+    }
+  }
+}
+
+/* RESOURCES */
 
 
 .grid.button {
@@ -546,9 +604,9 @@ text-align: center;
     height: 200px;
     width: 200px;
 
- img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
+   img {
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%;
+  }
 }

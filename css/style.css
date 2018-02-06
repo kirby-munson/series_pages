@@ -29,7 +29,7 @@
   .navigation ul li.scrollTop {
     float: right; }
 
-/* mobile nav */
+/* MOBIE NAV */
 @media (min-width: 0px) and (max-width: 749px) {
   .mainnav {
     display: none; }
@@ -49,33 +49,37 @@
   .navigation li {
     font-size: 14px;
     font-family: 'Poppins', sans-serif; } }
-@media (min-width: 750px) and (max-width: 1700px) {
+@media (min-width: 750px) and (max-width: 4700px) {
   .navbar-inverse {
     display: none; } }
-/* Description section */
+/* DESCRIPTION SECTION */
 .desc {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
   padding: 50px;
+  margin: 0 auto;
   padding-top: 70px;
+  width: 70%;
   padding-bottom: 70px;
   color: #181818; }
+  .desc span {
+    text-decoration: underline;
+    text-decoration-color: #ED1F23; }
 
 .description {
   background-color: #d9d9d9; }
 
-u {
-  text-decoration-color: #ED1F23; }
-
-/* mobile description */
+/* MOBILE DESCRIPTION */
 @media (min-width: 0px) and (max-width: 749px) {
   .desc {
-    font-size: 14px; } }
+    font-size: 14px;
+    width: 100%; } }
 @media (min-width: 750px) and (max-width: 880px) {
   .desc {
-    font-size: 14px; } }
-/* teaching section */
+    font-size: 14px;
+    width: 100%; } }
+/* TEACHING SECTION */
 .title {
   font-family: 'Poppins', sans-serif;
   font-size: 35px;
@@ -106,12 +110,27 @@ u {
   font-weight: 700; }
 
 button.reading {
-  margin-top: 30px;
+  margin-top: 50px;
   font-size: 25px;
+  background-color: #FBAF19;
+  border-radius: 1px; }
+
+button.reading:hover {
+  background-color: #ED1F23; }
+
+button.btn.watch.reading a {
+  color: white;
+  text-decoration: none; }
+
+a.reading {
+  font-size: 55px;
   display: flex;
+  text-align: center;
+  color: #FBAF19;
+  margin: 0 auto;
   justify-content: center; }
 
-/* mobile teaching */
+/* MOBILE TEACHING */
 @media (min-width: 0px) and (max-width: 749px) {
   .teaching {
     font-size: 14px; } }
@@ -245,7 +264,7 @@ img.carousel-image {
   .carousel-caption {
     padding-top: 70px;
     font-size: 12px; } }
-/* discussion questions */
+/* STUDY QUESTIONS */
 .questions {
   background-color: white;
   padding-bottom: 100px;
@@ -253,6 +272,9 @@ img.carousel-image {
   font-size: 18px; }
   .questions p {
     margin-bottom: 30px; }
+  .questions ul {
+    list-style-type: none;
+    text-decoration: none; }
 
 .modal-content {
   border: none;
@@ -272,10 +294,11 @@ button.btn.btn-primary {
   border: none;
   color: white; }
 
+/* MOBILE STUDY QUESTIONS */
 @media only screen and (max-width: 650px) {
   .questions {
     font-size: 14px; } }
-/* songs section */
+/* SONGS */
 .songs {
   background-color: white;
   padding-bottom: 100px;
@@ -284,7 +307,8 @@ button.btn.btn-primary {
   .songs p {
     margin-bottom: 30px; }
   .songs ul {
-    padding-top: 45px; }
+    padding-top: 45px;
+    list-style-type: none; }
 
 iframe {
   clear: both; }
@@ -301,7 +325,14 @@ div.main {
   text-align: center;
   font-size: 12px; }
 
-/* map */
+#songsmodal .modal-body p {
+  list-style-type: armenian; }
+#songsmodal .modal-body a {
+  background-color: #d9d9d9;
+  margin-bottom: 15px;
+  border-radius: 1px; }
+
+/* MAP */
 .title.map {
   background: #F2721E;
   background: linear-gradient(to right, #f2721e, rgba(242, 114, 30, 0.65));
@@ -309,9 +340,9 @@ div.main {
   padding-top: 35px;
   margin-bottom: -5px; }
 
-/* memorizing scripture */
+/* MEMORIZING SCRIPTURE */
 .card-body {
-  width: 330px;
+  width: 100%;
   padding: 15px;
   font-family: 'Poppins', sans-serif; }
 
@@ -324,9 +355,10 @@ div.main {
 #memory button {
   padding: 10px;
   margin-top: 5px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  background-color: #F2721E; }
 
-/* footer */
+/* FOOTER */
 footer {
   background-color: #ED1F23;
   background: linear-gradient(to right, #ed1f23, rgba(237, 31, 35, 0.75)); }
@@ -335,7 +367,14 @@ footer {
     display: block;
     margin: 0 auto; }
 
-/* resources */
+/* MOBILE FOOTER */
+@media (max-width: 750px) {
+  footer img {
+    width: 50%; } }
+@media (min-width: 751px) and (max-width: 951px) {
+  footer img {
+    width: 30%; } }
+/* RESOURCES */
 .grid.button {
   margin: 0 auto; }
 
