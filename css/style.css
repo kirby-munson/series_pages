@@ -134,11 +134,10 @@ a.reading {
 @media (min-width: 0px) and (max-width: 749px) {
   .teaching {
     font-size: 14px; } }
-/* ART SECTION: JOY */
+/* ART SECTION JOY */
 .title-joy {
   font-family: 'Poppins', sans-serif;
   color: #181818;
-  background-color: #d9d9d9;
   padding-top: 35px;
   font-size: 35px;
   padding-bottom: 35px;
@@ -146,127 +145,119 @@ a.reading {
   text-align: center;
   margin-bottom: -5px; }
 
-.joy {
-  background-color: #f2f2f2;
-  padding-bottom: 100px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  height: 500px; }
-
-.art {
-  background-color: #f2f2f2;
-  height: 400px; }
-
-#myCarousel {
-  font-family: 'Poppins', sans-serif;
-  text-shadow: none; }
-
-img.carousel-image {
-  height: auto;
-  max-width: 100%;
-  float: left;
-  border: none; }
-
-.carousel-caption {
-  text-shadow: none;
-  color: white;
-  padding-right: 400px;
-  text-align: center;
-  position: relative;
-  padding-top: 620px; }
-  .carousel-caption h4, .carousel-caption h5 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 18px; }
-
 .carousel-control.right,
 .carousel-control.left {
-  background-image: none; }
+  background-image: none;
+  margin-top: 2500px; }
 
-.carousel {
-  margin-left: -15px;
+#joy section {
+  padding: 55px 0;
+  position: relative;
+  display: block; }
+#joy .carousel {
   background: #FBAF19;
-  background: linear-gradient(to left, #fbaf19, rgba(251, 175, 25, 0.35));
-  height: 100%;
-  margin-right: -15px; }
+  background: linear-gradient(to left, #fbaf19, rgba(251, 175, 25, 0.45));
+  position: relative;
+  display: block; }
+#joy .carousel .carousel-indicators {
+  bottom: 0; }
+#joy .carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center; }
+#joy .carousel-inner {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  display: block; }
+#joy img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0; }
+#joy .carousel .item .carousel-caption {
+  bottom: 0;
+  float: left;
+  left: auto;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  padding: 20px 65px;
+  position: relative;
+  right: 0;
+  text-align: center;
+  top: 0;
+  text-shadow: none; }
+  #joy .carousel .item .carousel-caption h4 {
+    color: #181818;
+    padding-bottom: 15px; }
+  #joy .carousel .item .carousel-caption h5 {
+    padding-top: 10px;
+    color: #181818; }
+  #joy .carousel .item .carousel-caption h6 {
+    padding: -10px -10px; }
+  #joy .carousel .item .carousel-caption p {
+    padding-top: 10px; }
+  #joy .carousel .item .carousel-caption div.wrap {
+    width: 100%; }
 
-.glyphicon.glyphicon-chevron-left,
-.glyphicon.glyphicon-chevron-right {
-  margin-top: 200px; }
-
-/* mobile joy */
-@media only screen and (min-width: 959px) {
-  .carousel .item img {
+@media only screen and (min-width: 988px) {
+  #joy .carousel .item img {
     width: 60%; }
 
-  .carousel-caption {
-    bottom: 0;
-    float: left;
-    left: auto;
-    position: relative;
-    right: 0;
-    text-shadow: none;
-    padding-top: 80px;
-    padding-right: 120px;
-    padding-left: 40px;
-    color: white;
-    text-align: left;
-    top: 0;
-    width: 40%; } }
-@media (min-width: 340px) and (max-width: 410px) {
-  .carousel-caption {
-    padding-top: 300px;
-    font-size: 8px;
-    width: 100%;
-    padding-right: 120px; } }
-@media (min-width: 410px) and (max-width: 500px) {
-  .carousel-caption {
-    padding-top: 320px;
-    font-size: 8px;
-    width: 100%;
-    padding-right: 120px; } }
-@media (min-width: 501px) and (max-width: 600px) {
-  .carousel-caption {
-    padding-top: 375px;
-    font-size: 8px;
-    width: 100%;
-    padding-right: 190px; } }
-@media (min-width: 601px) and (max-width: 700px) {
-  .carousel-caption {
-    padding-top: 435px;
-    font-size: 10px;
-    width: 100%;
-    padding-right: 220px; } }
-@media (min-width: 701px) and (max-width: 800px) {
-  .carousel-caption {
-    padding-top: 495px;
-    font-size: 10px;
-    width: 100%;
-    padding-right: 330px; } }
-@media (min-width: 801px) and (max-width: 900px) {
-  .carousel-caption {
-    padding-top: 555px;
-    font-size: 10px;
-    width: 100%;
-    padding-right: 350px; } }
-@media (min-width: 960px) and (max-width: 1100px) {
-  .carousel-caption {
-    padding-top: 40px;
+  div.wrap {
+    padding-bottom: 25px; } }
+@media only screen and (min-width: 988px) {
+  #joy .carousel .item > div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center; } }
+@media (max-width: 1200px) {
+  h3 {
+    font-size: 13px; }
+
+  h4 {
     font-size: 12px; }
 
-  .glyphicon.glyphicon-chevron-left,
-  .glyphicon.glyphicon-chevron-right {
-    margin-top: 130px; } }
-@media (min-width: 1101px) and (max-width: 1300px) {
-  .glyphicon.glyphicon-chevron-left,
-  .glyphicon.glyphicon-chevron-right {
-    margin-top: 150px; }
+  h5 {
+    font-size: 10px; }
 
-  .carousel-caption {
-    padding-top: 70px;
-    font-size: 12px; } }
+  h6 {
+    font-size: 9px; }
+
+  p {
+    font-size: 10px; }
+
+  div.wrap {
+    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px; } }
+@media (max-width: 600px) {
+  div.wrap {
+    padding-left: 10px;
+    padding-right: 10px; } }
+@media (min-width: 601px) and (max-width: 700px) {
+  div.wrap {
+    padding-left: 40px;
+    padding-right: 40px; } }
+@media (min-width: 701px) and (max-width: 900px) {
+  div.wrap {
+    padding-left: 140px;
+    padding-right: 140px; } }
+@media (min-width: 901px) and (max-width: 987px) {
+  div.wrap {
+    padding-left: 240px;
+    padding-right: 240px; } }
 /* STUDY QUESTIONS */
 .questions {
-  background-color: white;
+  background-color: #f2f2f2;
   padding-bottom: 100px;
   font-family: 'Poppins', sans-serif;
   font-size: 18px; }
@@ -334,9 +325,7 @@ div.main {
 
 /* MAP */
 .title.map {
-  background: #F2721E;
-  background: linear-gradient(to right, #f2721e, rgba(242, 114, 30, 0.65));
-  color: white;
+  color: #181818;
   padding-top: 35px;
   margin-bottom: -5px; }
 
@@ -362,14 +351,12 @@ div.main {
 .grid.button {
   margin: 0 auto;
   background: #F2721E;
-  margin-top: 20px;
   font-family: 'Poppins', sans-serif;
   border-radius: 1px;
   border-color: #F2721E; }
 
 button.btn {
   background: #F2721E;
-  margin-top: 20px;
   font-family: 'Poppins', sans-serif;
   border-radius: 1px;
   color: white;
@@ -381,7 +368,7 @@ button.btn:hover {
   border-color: #ED1F23; }
 
 .grid {
-  padding: 50px;
+  padding: 20px;
   text-align: center; }
 
 .wrapper {
@@ -390,10 +377,10 @@ button.btn:hover {
   align-items: center;
   overflow: hidden;
   margin: 0 auto;
-  padding: 50px;
-  margin-bottom: 10px;
-  height: 200px;
-  width: 200px; }
+  padding: 10px;
+  margin-bottom: 30px;
+  height: 270px;
+  width: 270px; }
   .wrapper img {
     flex-shrink: 0;
     min-width: 100%;
@@ -438,7 +425,7 @@ button.btn:hover {
 /* FOOTER */
 footer {
   background-color: #ED1F23;
-  background: linear-gradient(to right, #ed1f23, rgba(237, 31, 35, 0.75)); }
+  background: linear-gradient(to right, #ed1f23, #b5171a); }
   footer img {
     width: 20%;
     display: block;
